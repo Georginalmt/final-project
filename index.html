@@ -2,7 +2,7 @@
 <html lang="ca">
 <body>
 <head>
-    <meta charset="UTF-8">
+   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         h2 {
@@ -16,11 +16,16 @@
           font-family: Georgia, Times, serif;
            
         }
-
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+      
         nav {
             background-color: lightblue;
             padding: 15px;
-            
         }
 
         nav a {
@@ -30,23 +35,34 @@
             font-weight: bold;
             font-size: 16px;
         }
-      p{
+      nav a:hover {
+        color: black;
+      }
+      
+     
+      
+      p {
          float: right;
-  padding: 20px;
-  width: 60%;
+        margin-top: 100px;
+         width: 60%;
+        
   
       }
         #sectionHome,
         #sectionAbout,
         #sectionInterest,
         #sectionContact {
-            height: 700px;
-            margin-top: 20px; /* Add margin to create space below the navigation bar */
+            height: 1000px;
         }
 
-        #sectionHome {
-            background-color: #b8b51d;
-        }
+        
+      #sectionHome {
+    background-image: url("homebackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
         #sectionAbout {
             background-color: #423711;
@@ -61,8 +77,10 @@
         }
     </style>
 </head>
-
-
+ <header>
+        <h1>Welcome!</h1>
+        
+    </header>
 
     <nav>
         <a href="#sectionHome">Home</a>
@@ -71,9 +89,8 @@
         <a href="#sectionContact">Contact</a>
     </nav>
 
-    <h2>One-page scroll site template</h2>
-
     <div id="sectionHome">
+      
       <p>
         Hi,My name is Georgina Li
       </p>
