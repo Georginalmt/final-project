@@ -2,7 +2,7 @@
 <html lang="ca">
 
 <head>
-  <title>Final project</title>
+    <title>Final project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -39,22 +39,20 @@
 
         .round-photo {
             position: absolute;
-            top: 40%; /* Adjusted to the vertical center */
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
             width: 260px;
             height: 260px;
             object-fit: cover;
-  
         }
 
         .intro-text {
             position: absolute;
-            top: 80%; /* Adjusted to the vertical center */
+            top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
-
             color: white;
             text-align: center;
             font-size: 25px;
@@ -84,7 +82,7 @@
         }
 
         #sectionInterest {
-            background-color: #4B527E;
+            background-color: #9EB8D9;
             padding: 40px;
         }
 
@@ -95,44 +93,84 @@
 
         .about-title {
             font-size: 60px;
+            margin-left: 70px;
             margin-bottom: 100px;
         }
 
+        .about-content1,
+        .about-content2,
+        .about-content3 {
+            max-width: 600px;
+            font-size: 25px;
+            position: absolute;
+        }
+
         .about-content1 {
-            max-width: 600px;
-            font-size: 25px;
-          margin-left: 55px;
-          margin-bottom: 80px;
+            top: 160%;
+            left: 7%;
         }
+
         .about-content2 {
-          position: absolute;
-            top: 203%; /* Adjusted to the vertical center */
+            top: 203%;
             right: 5%;
+        }
+
+        .about-content3 {
+            top: 256%;
+            left: 7%;
+            max-width: 1300px;
+        }
+
+        .about-image,
+        .about-image2 {
             max-width: 600px;
-            font-size: 25px;
-           
+            border-radius: 8px;
+            position: absolute;
         }
-       .about-content3 {
-         position: absolute;
-            top: 256%; /* Adjusted to the vertical center */
-            left: 8%;
-         max-width: 1300px;
-            font-size: 25px;
-      
-        }
+
         .about-image {
-            position: absolute;
-            top: 140%; /* Adjusted to the vertical center */
-            right: 5%; /* Adjusted to the right side */
-            max-width: 600px;
-            border-radius: 8px;
+            top: 140%;
+            right: 5%;
         }
-      .about-image2 {
+
+        .about-image2 {
+            top: 195%;
+            left: 7%;
+        }
+      .interest-title {
+            font-size: 60px;
+            margin-left: 70px;
+            margin-bottom: 100px;
+        }
+
+        .interest-item img {
+    width: 540px; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
+    border-radius: 8px;
+}
+
+
+
+.interest-item {
+    position: relative;
+    float: left;
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 450px; /* Set a fixed height for the interest items */
+}
+
+        .interest-description {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
             position: absolute;
-            top: 195%; /* Adjusted to the vertical center */
-            left: 8%; /* Adjusted to the right side */
-            max-width: 600px;
-            border-radius: 8px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
         }
     </style>
 </head>
@@ -166,33 +204,40 @@
     <div id="sectionAbout">
         <h2 class="about-title">About Me</h2>
         <p class="about-content1">
-          Hello! My name is Georgina Li and I am a second-year student 
-          at GBDA in Waterloo. I am also an international student, born in Beijing 
-          and raised in Shanghai. I completed my elementary, middle and high school studies in China. 
-          In 2022, I came to Canada with my family to start a new journey in my life.
+            Hello! My name is Georgina Li, and I am a second-year student
+            at GBDA in Waterloo. I am also an international student, born in Beijing
+            and raised in Shanghai. I completed my elementary, middle and high school studies in China.
+            In 2022, I came to Canada with my family to start a new journey in my life.
         </p>
-       <p class="about-content2">
-           I have been passionate about drawing, calligraphy and reading since I was a child. 
-         I found that I was able to gain happiness and a sense of satisfaction while doing these things, 
-         so I have continued to do so to this day, which has become a big reason why I chose GBDA. 
-         GBDA created an opportunity for me to meet and learn from people who come from different places 
-         and backgrounds. Besides, in those two years, I've learned a lot that 
-         I never learned before, just like writing code. Back when I graduated from high school, 
-         I would have NEVER imagined that two years later I would have designed this website by myself!
+        <p class="about-content2">
+            I have been passionate about drawing, calligraphy, and reading since I was a child.
+            I found that I was able to gain happiness and a sense of satisfaction while doing these things,
+            so I have continued to do so to this day, which has become a big reason why I chose GBDA.
+            GBDA created an opportunity for me to meet and learn from people who come from different places
+            and backgrounds. Besides, in those two years, I've learned a lot that
+            I never learned before, just like writing code. Back when I graduated from high school,
+            I would have NEVER imagined that two years later I would have designed this website by myself!
         </p>
-      <p class="about-content3">
-           In the future, I hope that as someone who is familiar with both Eastern and Western cultures, 
-        I can blend them both in my designs and spread the culture and stories I love to as many people as possible.
+        <p class="about-content3">
+            In the future, I hope that as someone who is familiar with both Eastern and Western cultures,
+            I can blend them both in my designs and spread the culture and stories I love to as many people as possible.
         </p>
         <img src="about1.jpg" alt="about1" class="about-image">
-      <img src="about2.jpg" alt="about2" class="about-image2">
+        <img src="about2.jpg" alt="about2" class="about-image2">
         <!-- Content for the About section goes here -->
     </div>
 
     <div id="sectionInterest">
-        <h2>My Interests</h2>
-        <p>Your amazing content goes here!</p>
-    </div>
+        <h2 class="interest-title">My Interests</h2>
+            <div class="interest-item">
+                <img src="interest1.jpg" alt="interest1">
+                <div class="interest-description">
+                    <p>Interest 1: Short description goes here.</p>
+                </div>
+            </div>
+           
+        </div>
+    
 
     <div id="sectionContact">
         <h2>Contact Me</h2>
