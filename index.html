@@ -140,38 +140,61 @@
       .interest-title {
             font-size: 60px;
             margin-left: 70px;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
-
-        .interest-item img {
-    width: 540px; /* Set a fixed width */
-    height: 600px; /* Set a fixed height */
-    border-radius: 8px;
-}
-
-
-
-.interest-item {
-    position: relative;
-    float: left;
-    width: calc(50% - 20px);
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    height: 450px; /* Set a fixed height for the interest items */
-}
-
-        .interest-description {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
+      .interest-image,
+      .interest-image2,
+      .interest-image3,
+      .interest-image4{
+        position: absolute;
+        max-width: 300px;
+        border-radius: 50%;
+         
+      }
+      .interest-image{
+        left: 7%;
+      }
+      .interest-image2{
+        left: 30%;
+        top: 360%;
+      }
+      .interest-image3{
+        left: 53%;
+      }
+      .interest-image4{
+        left: 75%;
+        top: 360%;
+      }
+      .interest-content1 {
             position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
             text-align: center;
-            color: white;
+            top: 370%;
+            left: 6%;
+            font-size: 20px;
+            max-width: 300px;
         }
+       .interest-content2 {
+            position: absolute;
+            text-align: center;
+            top: 310%;
+            left: 30%;
+            font-size: 20px;
+            max-width: 300px;
+        }
+      .interest-content3 {
+            position: absolute;
+            text-align: center;
+            top: 360%;
+            left: 53%;
+            font-size: 20px;
+            max-width: 300px;
+        }
+
+
+
+
+
+
     </style>
 </head>
 
@@ -198,7 +221,6 @@
                 I'll be showing you a little bit about my background, life, and hobbies here.<br>
             </p>
         </div>
-        <!-- Content for the Home section goes here -->
     </div>
 
     <div id="sectionAbout">
@@ -229,14 +251,34 @@
 
     <div id="sectionInterest">
         <h2 class="interest-title">My Interests</h2>
-            <div class="interest-item">
-                <img src="interest1.jpg" alt="interest1">
-                <div class="interest-description">
-                    <p>Interest 1: Short description goes here.</p>
-                </div>
+       <img src="interest1.jpg" alt="interest1" class="interest-image">
+       <img src="interest2.jpg" alt="interest2" class="interest-image2">
+       <img src="interest3.jpg" alt="interest3" class="interest-image3">
+       <img src="interest4.jpg" alt="interest4" class="interest-image4">
+      <p class="interest-content1">
+          I have been interested in drawing since kindergarten, and I have
+        learned how to sketch, watercolor and oil painting, etc. It's the 
+        hobby I've been doing for the longest time. A little fun fact: I 
+        like to draw flowers and landscapes more than people!
+      </p>
+       <p class="interest-content2">
+          My other passion is cooking, I love to cook and bake for the people 
+         I love. I only discovered my interest and talent for cooking when I 
+         started to cook for myself in university. Of course, most of my cooking 
+         is Chinese, and I am planning to learn more about cooking different cuisines 
+         from all over the world later on.
+      </p>
+      <p class="interest-content3">
+         I enjoy writing Chinese calligraphy! Born in a country with a long history 
+        and rich traditional culture, I think it is important and meaningful to learn 
+        a traditional Chinese art. I learned it from elementary school to high school, 
+        but I've been writing it less often in the past two years. It is kinda sad but 
+        I still insist to write my own <a href="https://en.wikipedia.org/wiki/Fai_chun">Chunlian</a> 
+        and <a href="https://en.wikipedia.org/wiki/Fu_(character)">Fu</a> during Chinese New Year. 
+        (If you don't know what Chunlian and Fu are, you can go on and click the links 
+        to get a brief overview!)
+      </p>
             </div>
-           
-        </div>
     
 
     <div id="sectionContact">
