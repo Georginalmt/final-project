@@ -62,9 +62,14 @@
 
         #sectionHome,
         #sectionAbout,
-        #sectionInterest,
-        #sectionContact {
-            height: 1000px;
+        #sectionInterest
+        {
+        height: 1000px;
+        }
+      #sectionContact {
+        height: 700px;
+        background-color: #213555;
+        padding: 40px;
         }
 
         #sectionHome {
@@ -85,16 +90,11 @@
             background-color: #DDE6ED;
             padding: 40px;
         }
-
-        #sectionContact {
-            background-color: #8b2e25;
-            padding: 40px;
-        }
+      
 
         .about-title {
             font-size: 60px;
             margin-left: 70px;
-            margin-bottom: 100px;
         }
 
         .about-content1,
@@ -106,19 +106,21 @@
         }
 
         .about-content1 {
-            top: 160%;
-            left: 7%;
+          float: left;
+          margin-left: 60px;
         }
 
         .about-content2 {
-            top: 203%;
-            right: 5%;
+          float: left;
+          margin-top: 360px;
+          margin-left: 750px;
         }
 
         .about-content3 {
-            top: 256%;
-            left: 7%;
-            max-width: 1300px;
+          float: left;
+          margin-top: 760px;
+          margin-left: 60px;
+          max-width: 1280px;
         }
 
         .about-image,
@@ -195,6 +197,16 @@
             font-size: 20px;
             max-width: 300px;
         }
+      
+      .interest-content4 {
+        color: #526D82;
+            position: absolute;
+            text-align: center;
+            top: 310%;
+            left: 75%;
+            font-size: 20px;
+            max-width: 300px;
+        }
       .vl-1 {
        position: absolute;
        border-left: 3px solid;
@@ -223,15 +235,39 @@
        position: absolute;
        border-left: 3px solid;
        color: #213555;
-       height: 118px;
-       left: 40%;
-       top: 343%;
+       height: 100px;
+       left: 85%;
+       top: 346%;
 }
+      .contact-title {
+            font-size: 60px;
+            color: white;
+            margin-left: 70px;
+            margin-bottom: 10px;
+        }
+      .contact-content {
+        float: left;
+        font-size: 23px;
+        margin-left: 70px;
+        margin-bottom: 50px;
+}
+       #sectionContact table {
+            width: 88%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 70px;
+        }
 
+        #sectionContact th, #sectionContact td {
+            border: 1px solid white;
+            padding: 20px;
+            text-align: left;
+        }
 
-
-
-
+        #sectionContact th {
+            background-color: #001C30;
+            color: white;
+        }
 
     </style>
 </head>
@@ -316,6 +352,12 @@
         (If you don't know what Chunlian and Fu are, you can go on and click the links 
         to get a brief overview!)
       </p>
+      <p class="interest-content4">
+          I'm a huge kpop fan, basically seventy percent of my song list is kpop songs and they always
+        make me feel energetic. I enjoy loving a kpop group and interacting with other fans. I also have 
+        a hobby of collecting albums, and I have so many that I've forgotten how many I have. This picture 
+        shows a small portion of my album collection!
+      </p>
       <div class="vl-1"></div>
       <div class="vl-2"></div>
        <div class="vl-3"></div>
@@ -323,10 +365,42 @@
             </div>
     
 
+   
     <div id="sectionContact">
-        <h2>Contact Me</h2>
-        <p>Your amazing content goes here!</p>
-    </div>
+       <h2 class="contact-title">Contact me</h2>
+      <p class="contact-content">
+        If you're interested in chatting or reaching out to me,
+        here are the social media or platforms that I use regularly!
+      </p>
+    <table>
+        <tr>
+            <th>Platform/App</th>
+            <th>My Account/ID</th>
+            <th>Usage</th>
+        </tr>
+        <tr>
+            <td>Instagram</td>
+            <td>l_georginaa</td>
+            <td>Messaging and work</td>
+        </tr>
+        <tr>
+            <td>Wechat</td>
+            <td>georginalmt</td>
+            <td>Messaging and share my life</td>
+        </tr>
+        <tr>
+            <td>Discord</td>
+            <td>georginali_</td>
+            <td>Messaging and voice/video chat</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>g25li@uwaterloo.ca</td>
+            <td>School and work</td>
+        </tr>
+    </table>
+</div>
+
 
 </body>
 
