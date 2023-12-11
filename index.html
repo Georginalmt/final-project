@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+       /* The navigation bar */
         body {
             color: white;
             margin: 0;
@@ -36,7 +37,8 @@
         nav a:hover {
             color: lightblue;
         }
-
+      
+        /* The round photo of the homepage */
         .round-photo {
             position: absolute;
             top: 40%;
@@ -47,7 +49,7 @@
             height: 260px;
             object-fit: cover;
         }
-
+         /* homepage short introduction */
         .intro-text {
             position: absolute;
             top: 80%;
@@ -59,19 +61,21 @@
             background: rgba(0, 0, 0, 0.25);
             border-radius: 10px;
         }
-
+      
+        /* Set the size of each page */
         #sectionHome,
         #sectionAbout,
         #sectionInterest
         {
         height: 1000px;
         }
-      #sectionContact {
+        #sectionContact {
         height: 700px;
         background-color: #213555;
         padding: 40px;
         }
-
+      
+      /* add a photo as background of the homepage */
         #sectionHome {
             background-image: url("homebackground.jpg");
             background-size: cover;
@@ -91,7 +95,7 @@
             padding: 40px;
         }
       
-
+       /* The title, content and images of the about page */
         .about-title {
             font-size: 60px;
             margin-left: 70px;
@@ -139,6 +143,8 @@
             top: 195%;
             left: 7%;
         }
+      
+      /* The title, content and images of the interest page */
       .interest-title {
             font-size: 60px;
             color: #526D82;
@@ -207,6 +213,7 @@
             font-size: 20px;
             max-width: 300px;
         }
+      /* four lines */
       .vl-1 {
        position: absolute;
        border-left: 3px solid;
@@ -239,7 +246,7 @@
        left: 85%;
        top: 346%;
 }
-      
+      /* The title, content and the table of the contact page */
       .contact-title {
             font-size: 60px;
             color: white;
@@ -269,7 +276,7 @@
             background-color: #001C30;
             color: white;
         }
-      
+      /* set different state of the links in the interest page */
       a.interest-link1,
       a.interest-link2 {
         color: #EBC7E6;
@@ -294,6 +301,7 @@
         text-decoration: underline;
       }
       
+       /* set different state of the link to my email*/
        a.contact-link {
          color: #EB6440;
          text-decoration: underline;
@@ -328,6 +336,7 @@
         <a href="#sectionContact">Contact</a>
     </nav>
 
+  
     <div id="sectionHome">
         <img src="selfie.jpg" alt="selfiehome" class="round-photo">
         <div class="intro-text">
@@ -340,6 +349,7 @@
         </div>
     </div>
 
+  
     <div id="sectionAbout">
         <h2 class="about-title">About Me</h2>
         <p class="about-content1">
@@ -366,6 +376,7 @@
         <!-- Content for the About section goes here -->
     </div>
 
+  
     <div id="sectionInterest">
         <h2 class="interest-title">My Interests</h2>
        <img src="interest1.jpg" alt="interest1" class="interest-image">
@@ -408,7 +419,6 @@
             </div>
     
 
-   
     <div id="sectionContact">
        <h2 class="contact-title">Contact me</h2>
       <p class="contact-content">
@@ -443,7 +453,6 @@
         </tr>
     </table>
 </div>
-
 
 </body>
 
